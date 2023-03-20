@@ -115,6 +115,7 @@
         android:layout_marginStart="24dp"
         android:layout_marginTop="110dp"
         android:text="@string/sali"
+        app:layout_constraintBottom_toTopOf="@+id/carsambaTv"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/hizTv" />
 
@@ -124,8 +125,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="10dp"
         android:text="@string/carsamba"
+        app:layout_constraintBottom_toTopOf="@+id/persembeTv"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/saliTv" />
 
@@ -135,8 +136,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="10dp"
         android:text="@string/persembe"
+        app:layout_constraintBottom_toTopOf="@+id/cumaTv"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/carsambaTv" />
 
@@ -146,8 +147,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="10dp"
         android:text="@string/cuma"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/persembeTv" />
 
@@ -166,7 +167,6 @@
         android:id="@+id/cloudIv"
         android:layout_width="24dp"
         android:layout_height="24dp"
-        android:layout_marginTop="8dp"
         android:src="@drawable/ic_cloudy"
         app:layout_constraintBottom_toTopOf="@+id/sunny3Iv"
         app:layout_constraintEnd_toStartOf="@+id/textView5"
@@ -177,7 +177,7 @@
         android:id="@+id/sunny3Iv"
         android:layout_width="24dp"
         android:layout_height="24dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="0dp"
         android:src="@drawable/ic_sunny"
         app:layout_constraintBottom_toTopOf="@+id/rainIv"
         app:layout_constraintEnd_toStartOf="@+id/textView6"
@@ -188,8 +188,8 @@
         android:id="@+id/rainIv"
         android:layout_width="24dp"
         android:layout_height="24dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginBottom="84dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="0dp"
         android:src="@drawable/ic_rainy"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/textView7"
@@ -203,6 +203,7 @@
         android:layout_marginTop="110dp"
         android:layout_marginEnd="24dp"
         android:text="@string/derece2"
+        app:layout_constraintBottom_toTopOf="@+id/textView5"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/windIy" />
 
@@ -210,9 +211,9 @@
         android:id="@+id/textView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
         android:layout_marginEnd="24dp"
         android:text="@string/derece2"
+        app:layout_constraintBottom_toTopOf="@+id/textView6"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
@@ -220,9 +221,9 @@
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
         android:layout_marginEnd="24dp"
         android:text="@string/derece2"
+        app:layout_constraintBottom_toTopOf="@+id/textView7"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
@@ -230,9 +231,9 @@
         android:id="@+id/textView7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
         android:layout_marginEnd="24dp"
         android:text="@string/derece2"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView6" />
 
