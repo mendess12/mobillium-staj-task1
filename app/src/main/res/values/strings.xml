@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">MobilliumTast1</string>
+    <string name="istanbul">İstanbul</string>
+    <string name="bugun">Bugün</string>
+    <string name="derece1">26°</string>
+    <string name="gunesli">Güneşli</string>
+    <string name="ruzgar">Rüzgar</string>
+    <string name="hiz">3 km/s</string>
+    <string name="sali">Sal,02 Nisan</string>
+    <string name="carsamba">Çar,03 Nisan</string>
+    <string name="persembe">Per,04 Nisan</string>
+    <string name="cuma">Cum,05 Nisan</string>
+    <string name="derece2">14°-27°</string>
+    <string name="change_mode">Change Mode</string>
+
+</resources>
