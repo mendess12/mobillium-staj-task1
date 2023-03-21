@@ -5,6 +5,7 @@
         <item name="android:fontFamily">@font/inter_medium</item>
         <item name="android:textSize">14sp</item>
         <item name="lineHeight">31.5sp</item>
+        <item name="android:textColor">@color/purple_700</item>
         <item name="android:letterSpacing">0</item>
     </style>
 
@@ -12,6 +13,7 @@
         <item name="android:fontFamily">@font/inter_medium</item>
         <item name="android:textSize">16sp</item>
         <item name="lineHeight">31.5sp</item>
+        <item name="android:textColor">@color/purple_700</item>
         <item name="android:letterSpacing">0</item>
     </style>
 
@@ -19,6 +21,7 @@
         <item name="android:fontFamily">@font/inter_medium</item>
         <item name="android:textSize">20sp</item>
         <item name="lineHeight">31.5sp</item>
+        <item name="android:textColor">@color/purple_700</item>
         <item name="android:letterSpacing">0</item>
     </style>
 
@@ -26,6 +29,7 @@
         <item name="android:fontFamily">@font/inter_regular</item>
         <item name="android:textSize">14sp</item>
         <item name="lineHeight">31.5sp</item>
+        <item name="android:textColor">@color/purple_700</item>
         <item name="android:letterSpacing">0</item>
     </style>
 

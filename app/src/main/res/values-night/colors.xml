@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="purple_200">#FF2F3541</color> <!-- screen background -->
+    <color name="purple_500">#E3E9F1</color>  <!-- vector asset fillColor -->
+    <color name="purple_700">#E3E9F1</color>  <!-- text color -->
+
+</resources>
