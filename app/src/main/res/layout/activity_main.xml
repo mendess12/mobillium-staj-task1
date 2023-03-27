@@ -7,15 +7,14 @@
     android:background="@color/purple_200"
     tools:context=".MainActivity">
 
-
     <Switch
         android:id="@+id/switcher"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="100dp"
-        android:layout_marginBottom="517dp"
-        android:minWidth="48dp"
-        android:minHeight="48dp"
+        android:layout_marginStart="@dimen/margin_100dp"
+        android:layout_marginBottom="@dimen/margin_515dp"
+        android:minWidth="@dimen/margin_48dp"
+        android:minHeight="@dimen/margin_48dp"
         app:layout_constraintBottom_toTopOf="@+id/textView4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/istanbulTv"
@@ -26,7 +25,7 @@
         style="@style/medium_20sp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="@dimen/margin_30dp"
         android:gravity="center"
         android:text="@string/istanbul"
         app:layout_constraintEnd_toEndOf="parent"
@@ -46,11 +45,9 @@
 
     <ImageView
         android:id="@+id/sunnyIv"
-        android:layout_width="@dimen/layout_width_64dp"
-        android:layout_height="@dimen/layout_height_64dp"
-        android:layout_marginStart="173dp"
-        android:layout_marginTop="70dp"
-        android:layout_marginEnd="174dp"
+        android:layout_width="@dimen/margin_64dp"
+        android:layout_height="@dimen/margin_64dp"
+        android:layout_marginTop="@dimen/margin_70dp"
         android:src="@drawable/ic_sunny"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -60,12 +57,12 @@
         android:id="@+id/derece1Tv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="@dimen/margin_32dp"
         android:gravity="center"
         android:text="@string/derece1"
-        android:textSize="64sp"
-        android:textStyle="bold"
         android:textColor="@color/purple_700"
+        android:textSize="@dimen/margin_64sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/sunnyIv" />
@@ -75,7 +72,7 @@
         style="@style/medium_16sp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="@dimen/margin_16dp"
         android:text="@string/gunesli"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -86,39 +83,36 @@
         style="@style/medium_14sp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="@dimen/margin_32dp"
         android:text="@string/ruzgar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/gunseliTv" />
 
-
     <ImageView
         android:id="@+id/windIy"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="165dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginStart="@dimen/margin_165dp"
+        android:layout_marginTop="@dimen/margin_8dp"
         android:src="@drawable/ic_wind"
         app:layout_constraintEnd_toStartOf="@+id/hizTv"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ruzgarTv" />
-
 
     <TextView
         android:id="@+id/hizTv"
         style="@style/regular_14sp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="4dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="165dp"
-        android:padding="5dp"
+        android:layout_marginStart="@dimen/margin_4dp"
+        android:layout_marginTop="@dimen/margin_8dp"
+        android:layout_marginEnd="@dimen/margin_165dp"
+        android:padding="@dimen/margin_4dp"
         android:text="@string/hiz"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/windIy"
         app:layout_constraintTop_toBottomOf="@+id/ruzgarTv" />
-
 
     <TextView
         android:id="@+id/saliTv"
@@ -126,7 +120,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/margin_24dp"
-        android:layout_marginTop="110dp"
+        android:layout_marginTop="@dimen/margin_110dp"
         android:text="@string/sali"
         app:layout_constraintBottom_toTopOf="@+id/carsambaTv"
         app:layout_constraintStart_toStartOf="parent"
@@ -167,9 +161,9 @@
 
     <ImageView
         android:id="@+id/sunny2Iv"
-        android:layout_width="@dimen/layout_width_24dp"
-        android:layout_height="@dimen/layout_height_24dp"
-        android:layout_marginTop="108dp"
+        android:layout_width="@dimen/margin_24dp"
+        android:layout_height="@dimen/margin_24dp"
+        android:layout_marginTop="@dimen/margin_110dp"
         android:src="@drawable/ic_sunny"
         app:layout_constraintBottom_toTopOf="@+id/cloudIv"
         app:layout_constraintEnd_toStartOf="@+id/textView4"
@@ -178,8 +172,8 @@
 
     <ImageView
         android:id="@+id/cloudIv"
-        android:layout_width="@dimen/layout_width_24dp"
-        android:layout_height="@dimen/layout_height_24dp"
+        android:layout_width="@dimen/margin_24dp"
+        android:layout_height="@dimen/margin_24dp"
         android:src="@drawable/ic_cloudy"
         app:layout_constraintBottom_toTopOf="@+id/sunny3Iv"
         app:layout_constraintEnd_toStartOf="@+id/textView5"
@@ -188,9 +182,8 @@
 
     <ImageView
         android:id="@+id/sunny3Iv"
-        android:layout_width="@dimen/layout_width_24dp"
-        android:layout_height="@dimen/layout_height_24dp"
-        android:layout_marginTop="0dp"
+        android:layout_width="@dimen/margin_24dp"
+        android:layout_height="@dimen/margin_24dp"
         android:src="@drawable/ic_sunny"
         app:layout_constraintBottom_toTopOf="@+id/rainIv"
         app:layout_constraintEnd_toStartOf="@+id/textView6"
@@ -199,10 +192,8 @@
 
     <ImageView
         android:id="@+id/rainIv"
-        android:layout_width="@dimen/layout_width_24dp"
-        android:layout_height="@dimen/layout_height_24dp"
-        android:layout_marginTop="0dp"
-        android:layout_marginBottom="0dp"
+        android:layout_width="@dimen/margin_24dp"
+        android:layout_height="@dimen/margin_24dp"
         android:src="@drawable/ic_rainy"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/textView7"
@@ -213,7 +204,7 @@
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="110dp"
+        android:layout_marginTop="@dimen/margin_110dp"
         android:layout_marginEnd="@dimen/margin_24dp"
         android:text="@string/derece2"
         app:layout_constraintBottom_toTopOf="@+id/textView5"
@@ -249,6 +240,5 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView6" />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
