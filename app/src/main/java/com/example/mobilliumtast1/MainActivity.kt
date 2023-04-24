@@ -1,7 +1,6 @@
 package com.example.mobilliumtast1
 
 import android.content.Context
-import android.content.SharedPreferences
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatDelegate
@@ -13,9 +12,9 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        //sharedPreferences kullanmamızın amacı uygulamayı açıp tekrar açtığımzda mode durumunu kaydetmek
+        //sharedPreferences kullanmamızın amacı uygulamayı kapatıp tekrar açtığımzda mode durumunu kaydetmek
         val sharedPreferences = getSharedPreferences("MODE", Context.MODE_PRIVATE)
-        var mode = sharedPreferences.getBoolean("night", false) //light mode is the default mode
+        val mode = sharedPreferences.getBoolean("night", false) //light mode is the default mode
         val editor = sharedPreferences.edit()
 
         if (mode) {
@@ -33,6 +32,5 @@ class MainActivity : AppCompatActivity() {
             }
             editor.apply()
         }
-
     }
 }

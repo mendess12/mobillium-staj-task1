@@ -3,32 +3,32 @@
 
     <style name="medium_14sp" parent="TextAppearance.AppCompat">
         <item name="android:fontFamily">@font/inter_medium</item>
-        <item name="android:textSize">14sp</item>
-        <item name="lineHeight">31.5sp</item>
+        <item name="android:textSize">@dimen/text_size_14sp</item>
+        <item name="lineHeight">@dimen/line_height_size_32sp</item>
         <item name="android:textColor">@color/purple_700</item>
         <item name="android:letterSpacing">0</item>
     </style>
 
     <style name="medium_16sp" parent="TextAppearance.AppCompat">
         <item name="android:fontFamily">@font/inter_medium</item>
-        <item name="android:textSize">16sp</item>
-        <item name="lineHeight">31.5sp</item>
+        <item name="android:textSize">@dimen/text_size_16sp</item>
+        <item name="lineHeight">@dimen/line_height_size_32sp</item>
         <item name="android:textColor">@color/purple_700</item>
         <item name="android:letterSpacing">0</item>
     </style>
 
     <style name="medium_20sp" parent="TextAppearance.AppCompat">
         <item name="android:fontFamily">@font/inter_medium</item>
-        <item name="android:textSize">20sp</item>
-        <item name="lineHeight">31.5sp</item>
+        <item name="android:textSize">@dimen/text_size_20sp</item>
+        <item name="lineHeight">@dimen/line_height_size_32sp</item>
         <item name="android:textColor">@color/purple_700</item>
         <item name="android:letterSpacing">0</item>
     </style>
 
     <style name="regular_14sp" parent="TextAppearance.AppCompat">
         <item name="android:fontFamily">@font/inter_regular</item>
-        <item name="android:textSize">14sp</item>
-        <item name="lineHeight">31.5sp</item>
+        <item name="android:textSize">@dimen/text_size_14sp</item>
+        <item name="lineHeight">@dimen/line_height_size_32sp</item>
         <item name="android:textColor">@color/purple_700</item>
         <item name="android:letterSpacing">0</item>
     </style>
