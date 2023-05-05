@@ -12,49 +12,47 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/margin_100dp"
-        android:layout_marginBottom="@dimen/margin_515dp"
         android:minWidth="@dimen/margin_48dp"
         android:minHeight="@dimen/margin_48dp"
-        app:layout_constraintBottom_toTopOf="@+id/textView4"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/istanbulTv"
+        app:layout_constraintStart_toEndOf="@+id/sehirTVDetailScreen"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/istanbulTv"
+        android:id="@+id/sehirTVDetailScreen"
         style="@style/medium_20sp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/margin_30dp"
-        android:gravity="center"
+        android:layout_marginTop="@dimen/margin_32dp"
         android:text="@string/istanbul"
+        android:textColor="@color/purple_700"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/bugunTv"
+        android:id="@+id/gunTVDetailScreen"
         style="@style/regular_14sp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:gravity="center"
         android:text="@string/bugun"
+        android:textColor="@color/purple_700"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/istanbulTv" />
+        app:layout_constraintTop_toBottomOf="@+id/sehirTVDetailScreen" />
 
     <ImageView
-        android:id="@+id/sunnyIv"
+        android:id="@+id/sunnyIVDetailScreen"
         android:layout_width="@dimen/margin_64dp"
         android:layout_height="@dimen/margin_64dp"
-        android:layout_marginTop="@dimen/margin_70dp"
+        android:layout_marginTop="@dimen/margin_100dp"
         android:src="@drawable/ic_sunny"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/bugunTv" />
+        app:layout_constraintTop_toBottomOf="@+id/gunTVDetailScreen" />
 
     <TextView
-        android:id="@+id/derece1Tv"
+        android:id="@+id/derece1TVDetailScreen"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/margin_32dp"
@@ -65,10 +63,10 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/sunnyIv" />
+        app:layout_constraintTop_toBottomOf="@+id/sunnyIVDetailScreen" />
 
     <TextView
-        android:id="@+id/gunseliTv"
+        android:id="@+id/gunesliTVDetailScreen"
         style="@style/medium_16sp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -76,10 +74,10 @@
         android:text="@string/gunesli"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/derece1Tv" />
+        app:layout_constraintTop_toBottomOf="@+id/derece1TVDetailScreen" />
 
     <TextView
-        android:id="@+id/ruzgarTv"
+        android:id="@+id/ruzgarTVDetailScreen"
         style="@style/medium_14sp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -87,158 +85,168 @@
         android:text="@string/ruzgar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/gunseliTv" />
+        app:layout_constraintTop_toBottomOf="@+id/gunesliTVDetailScreen" />
 
     <ImageView
-        android:id="@+id/windIy"
+        android:id="@+id/windIVDetailScreen"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/margin_165dp"
+        android:layout_marginStart="165dp"
         android:layout_marginTop="@dimen/margin_8dp"
         android:src="@drawable/ic_wind"
-        app:layout_constraintEnd_toStartOf="@+id/hizTv"
+        app:layout_constraintBottom_toBottomOf="@+id/hizTVDetailScren"
+        app:layout_constraintEnd_toStartOf="@+id/hizTVDetailScren"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ruzgarTv" />
+        app:layout_constraintTop_toBottomOf="@+id/ruzgarTVDetailScreen" />
 
     <TextView
-        android:id="@+id/hizTv"
+        android:id="@+id/hizTVDetailScren"
         style="@style/regular_14sp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/margin_4dp"
         android:layout_marginTop="@dimen/margin_8dp"
         android:layout_marginEnd="@dimen/margin_165dp"
-        android:padding="@dimen/margin_4dp"
+        android:padding="@dimen/padding_size_5dp"
         android:text="@string/hiz"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/windIy"
-        app:layout_constraintTop_toBottomOf="@+id/ruzgarTv" />
+        app:layout_constraintStart_toEndOf="@+id/windIVDetailScreen"
+        app:layout_constraintTop_toBottomOf="@+id/ruzgarTVDetailScreen" />
 
-    <TextView
-        android:id="@+id/saliTv"
-        style="@style/regular_14sp"
-        android:layout_width="wrap_content"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraint_daily_weather"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/margin_24dp"
-        android:layout_marginTop="@dimen/margin_110dp"
-        android:text="@string/sali"
-        app:layout_constraintBottom_toTopOf="@+id/carsambaTv"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/hizTv" />
-
-    <TextView
-        android:id="@+id/carsambaTv"
-        style="@style/regular_14sp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/margin_24dp"
-        android:text="@string/carsamba"
-        app:layout_constraintBottom_toTopOf="@+id/persembeTv"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/saliTv" />
-
-    <TextView
-        android:id="@+id/persembeTv"
-        style="@style/regular_14sp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/margin_24dp"
-        android:text="@string/persembe"
-        app:layout_constraintBottom_toTopOf="@+id/cumaTv"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/carsambaTv" />
-
-    <TextView
-        android:id="@+id/cumaTv"
-        style="@style/regular_14sp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/margin_24dp"
-        android:text="@string/cuma"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/persembeTv" />
-
-    <ImageView
-        android:id="@+id/sunny2Iv"
-        android:layout_width="@dimen/margin_24dp"
-        android:layout_height="@dimen/margin_24dp"
-        android:layout_marginTop="@dimen/margin_110dp"
-        android:src="@drawable/ic_sunny"
-        app:layout_constraintBottom_toTopOf="@+id/cloudIv"
-        app:layout_constraintEnd_toStartOf="@+id/textView4"
-        app:layout_constraintStart_toEndOf="@+id/saliTv"
-        app:layout_constraintTop_toBottomOf="@+id/hizTv" />
-
-    <ImageView
-        android:id="@+id/cloudIv"
-        android:layout_width="@dimen/margin_24dp"
-        android:layout_height="@dimen/margin_24dp"
-        android:src="@drawable/ic_cloudy"
-        app:layout_constraintBottom_toTopOf="@+id/sunny3Iv"
-        app:layout_constraintEnd_toStartOf="@+id/textView5"
-        app:layout_constraintStart_toEndOf="@+id/carsambaTv"
-        app:layout_constraintTop_toBottomOf="@+id/sunny2Iv" />
-
-    <ImageView
-        android:id="@+id/sunny3Iv"
-        android:layout_width="@dimen/margin_24dp"
-        android:layout_height="@dimen/margin_24dp"
-        android:src="@drawable/ic_sunny"
-        app:layout_constraintBottom_toTopOf="@+id/rainIv"
-        app:layout_constraintEnd_toStartOf="@+id/textView6"
-        app:layout_constraintStart_toEndOf="@+id/persembeTv"
-        app:layout_constraintTop_toBottomOf="@+id/cloudIv" />
-
-    <ImageView
-        android:id="@+id/rainIv"
-        android:layout_width="@dimen/margin_24dp"
-        android:layout_height="@dimen/margin_24dp"
-        android:src="@drawable/ic_rainy"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/textView7"
-        app:layout_constraintStart_toEndOf="@+id/cumaTv"
-        app:layout_constraintTop_toBottomOf="@+id/sunny3Iv" />
-
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/margin_110dp"
-        android:layout_marginEnd="@dimen/margin_24dp"
-        android:text="@string/derece2"
-        app:layout_constraintBottom_toTopOf="@+id/textView5"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/windIy" />
-
-    <TextView
-        android:id="@+id/textView5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="@dimen/margin_24dp"
-        android:text="@string/derece2"
-        app:layout_constraintBottom_toTopOf="@+id/textView6"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4" />
-
-    <TextView
-        android:id="@+id/textView6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="@dimen/margin_24dp"
-        android:text="@string/derece2"
-        app:layout_constraintBottom_toTopOf="@+id/textView7"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView5" />
-
-    <TextView
-        android:id="@+id/textView7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="@dimen/margin_24dp"
-        android:text="@string/derece2"
+        android:layout_marginBottom="@dimen/margin_24dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/saliTv"
+            style="@style/regular_14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_24dp"
+            android:text="@string/sali"
+            app:layout_constraintBottom_toTopOf="@+id/carsambaTv"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/carsambaTv"
+            style="@style/regular_14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_24dp"
+            android:text="@string/carsamba"
+            app:layout_constraintBottom_toTopOf="@+id/persembeTv"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/saliTv" />
+
+        <TextView
+            android:id="@+id/persembeTv"
+            style="@style/regular_14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_24dp"
+            android:text="@string/persembe"
+            app:layout_constraintBottom_toTopOf="@+id/cumaTv"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/carsambaTv" />
+
+        <TextView
+            android:id="@+id/cumaTv"
+            style="@style/regular_14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_24dp"
+            android:text="@string/cuma"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/persembeTv" />
+
+        <ImageView
+            android:id="@+id/sunny2Iv"
+            android:layout_width="@dimen/margin_24dp"
+            android:layout_height="@dimen/margin_24dp"
+            android:src="@drawable/ic_sunny"
+            app:layout_constraintBottom_toTopOf="@+id/rainIv"
+            app:layout_constraintEnd_toEndOf="@+id/cloudIv"
+            app:layout_constraintStart_toStartOf="@+id/cloudIv"
+            app:layout_constraintTop_toBottomOf="@+id/cloudIv" />
+
+        <ImageView
+            android:id="@+id/cloudIv"
+            android:layout_width="@dimen/margin_24dp"
+            android:layout_height="@dimen/margin_24dp"
+            android:src="@drawable/ic_cloudy"
+            app:layout_constraintBottom_toTopOf="@+id/sunny2Iv"
+            app:layout_constraintEnd_toEndOf="@+id/sunnyIv"
+            app:layout_constraintStart_toStartOf="@+id/sunnyIv"
+            app:layout_constraintTop_toBottomOf="@+id/sunnyIv" />
+
+        <ImageView
+            android:id="@+id/sunnyIv"
+            android:layout_width="@dimen/margin_24dp"
+            android:layout_height="@dimen/margin_24dp"
+            android:src="@drawable/ic_sunny"
+            app:layout_constraintBottom_toTopOf="@+id/cloudIv"
+            app:layout_constraintEnd_toStartOf="@+id/text1"
+            app:layout_constraintStart_toEndOf="@+id/saliTv"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/rainIv"
+            android:layout_width="@dimen/margin_24dp"
+            android:layout_height="@dimen/margin_24dp"
+            android:src="@drawable/ic_rainy"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/sunny2Iv"
+            app:layout_constraintStart_toStartOf="@+id/sunny2Iv"
+            app:layout_constraintTop_toBottomOf="@+id/sunny2Iv" />
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin_24dp"
+            android:text="@string/derece2"
+            app:layout_constraintBottom_toTopOf="@+id/text2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin_24dp"
+            android:text="@string/derece2"
+            app:layout_constraintBottom_toTopOf="@+id/text3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text1" />
+
+        <TextView
+            android:id="@+id/text3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin_24dp"
+            android:text="@string/derece2"
+            app:layout_constraintBottom_toTopOf="@+id/text4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text2" />
+
+        <TextView
+            android:id="@+id/text4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin_24dp"
+            android:text="@string/derece2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text3" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
