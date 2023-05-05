@@ -14,5 +14,6 @@ ConstraintLayout ve ilgili View'lar kullanılarak UI tasarımı yapmak. Tasarım
 <hr>
 
 ### UI Tasarım
-![Ekran Görüntüsü (36)](https://user-images.githubusercontent.com/76566952/226609268-66909e12-1e87-4e22-a5c8-922b7a8d2189.png) ![Ekran Görüntüsü (37)](https://user-images.githubusercontent.com/76566952/226609332-ec3a34f7-3674-4e2d-966f-13e983c6470b.png)
+
+![Ekran Görüntüsü (71)](https://user-images.githubusercontent.com/76566952/236391383-73caaf1e-958b-4bdc-88fd-5aa14d857929.png) ![Ekran Görüntüsü (72)](https://user-images.githubusercontent.com/76566952/236391453-e9903b51-e3a2-47a1-9c23-81fc3ddace24.png)
 
